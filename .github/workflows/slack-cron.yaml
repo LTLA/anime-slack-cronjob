@@ -1,0 +1,16 @@
+on:
+  push:
+    branches:
+      - master
+
+name: slack-cron
+
+jobs:
+  slack-cron:
+    name: "Posting to the work slack"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: LTLA/actions-anime-gif-slackbot@master
+        with:
+          slackWebhook: ${{ secrets.SLACK_WORK_WEBHOOK }}
