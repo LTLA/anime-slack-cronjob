@@ -1,7 +1,6 @@
 on:
-  push:
-    branches:
-      - master
+  schedule:
+    - cron: '0 16 * * 1-5'
 
 name: slack-cron
 
