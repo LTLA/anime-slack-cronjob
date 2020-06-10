@@ -1,0 +1,16 @@
+on:
+  push
+
+name: marioni-slack
+
+jobs:
+  slack-cron:
+    name: "Posting to the Marioni slack"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: LTLA/actions-anime-gif-slackbot@master
+        with:
+          slackWebhook: ${{ secrets.SLACK_MARIONI_WEBHOOK }}
+          sentiment: celebrate,excited,thumbs_up
+          rating: 0
