@@ -12,4 +12,4 @@ jobs:
       - name: Check out repo
         uses: LTLA/actions-anime-gif-slackbot@master
         with:
-          slackWebhook: ${{ secrets.SLACK_WORK_WEBHOOK }}
+          webhook: ${{ secrets.SLACK_WORK_WEBHOOK }}

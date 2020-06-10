@@ -13,6 +13,6 @@ jobs:
       - name: Posting to dear old Jonny 
         uses: LTLA/actions-anime-gif-slackbot@master
         with:
-          slackWebhook: ${{ secrets.SLACK_MARIONI_JONNY }}
+          webhook: ${{ secrets.SLACK_MARIONI_JONNY }}
           sentiment: celebrate,excited,thumbs_up
           rating: 0

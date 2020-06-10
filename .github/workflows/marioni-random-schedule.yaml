@@ -12,4 +12,4 @@ jobs:
       - name: Posting any random old GIF 
         uses: LTLA/actions-anime-gif-slackbot@master
         with:
-          slackWebhook: ${{ secrets.SLACK_MARIONI_RANDOM }}
+          webhook: ${{ secrets.SLACK_MARIONI_RANDOM }}
